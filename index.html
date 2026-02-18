@@ -1,0 +1,597 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silaryo | 28 inch traffic cones for sale</title>
+  <meta name="description" content="Home - Silaryo provides professional Traffic safety equipment services. Specializing in 28 inch traffic cones for sale.">
+  <meta name="keywords" content="28 inch traffic cones for sale, printable no parking signs free download, traffic cone warning signs construction, traffic cones">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Silaryo | 28 inch traffic cones for sale">
+  <meta property="og:description" content="Home - Silaryo provides professional Traffic safety equipment services. Specializing in 28 inch traffic cones for sale.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Silaryo | 28 inch traffic cones for sale">
+  <meta name="twitter:description" content="Home - Silaryo provides professional Traffic safety equipment services. Specializing in 28 inch traffic cones for sale.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'a2637a4b-1d61-455a-9bf3-20b78e029998',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+  <nav class="navbar"><button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></button><button class="phone-header-btn" aria-label="Call"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button><div class="nav-container"><div class="nav-brand"><a href="/" class="logo-link"><img src="/assets/silaryo-traffic-safety-equipment-logo.webp" alt="Silaryo" class="logo" /></a></div><ul class="nav-menu" id="navMenu"><li><a href="/products">Solutions</a></li><li><a href="/about">About</a></li></ul><div class="nav-cta-container"><a href="/contact" class="nav-cta-btn">Contact</a></div></div></nav>
+  
+  <main>
+    <section class="home-hero-section" data-layout-spec="Home-hero" data-hero-type="fullscreen-scrim">
+  <!-- Background Image Layer -->
+  <img data-hero-bg="true" data-placeholder="home-hero-bg" data-context="Night-time asphalt road scene for traffic safety equipment company: Wide-angle view of a dark urban road at dusk or night with subtle street lighting, wet asphalt with reflective road markings (white/yellow lines), traffic cones visible in distance, atmospheric fog or mist, moody blue-gray tones with warm amber street lights, professional industrial photography style, shallow depth of field, cinematic lighting, high-quality realistic photo" data-preserve-bg="0" class="home-hero-section__bg-image" width="1920" height="1080" src="/assets/site-home-hero-bg.webp" alt="Night road with reflective traffic safety equipment">
+  
+  <!-- Gradient Scrim Overlay -->
+  <div class="home-hero-section__scrim" aria-hidden="true"></div>
+  
+  <!-- Noise Texture Overlay -->
+  <div class="home-hero-section__noise" aria-hidden="true"></div>
+  
+  <!-- Content Overlay Group -->
+  <div class="home-hero-section__content">
+    <div class="home-hero-section__content-inner">
+      <h1 class="home-hero-section__headline">
+        <span class="home-hero-section__headline-line">VISIBILITY</span>
+        <span class="home-hero-section__headline-line home-hero-section__headline-line--accent">SAVES LIVES</span>
+      </h1>
+      <h3 class="home-hero-section__subtitle">Reflective, rugged safety gear for roads, worksites, schools, and warehouses—built to be seen when it matters most.</h3>
+      <div class="home-hero-section__cta-group">
+        <a href="/products" class="home-hero-section__cta home-hero-section__cta--primary">Explore Solutions</a>
+        <a href="/contact" class="home-hero-section__cta home-hero-section__cta--secondary">Talk to an Expert</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom Diagonal Stripe Divider -->
+  <div class="home-hero-section__divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="stripeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#1D2430;stop-opacity:1"></stop>
+          <stop offset="48%" style="stop-color:#2B3443;stop-opacity:1"></stop>
+          <stop offset="52%" style="stop-color:#FFE600;stop-opacity:1"></stop>
+          <stop offset="56%" style="stop-color:#2B3443;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#1D2430;stop-opacity:1"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,120 L0,50 L1200,10 L1200,120 Z" fill="url(#stripeGradient)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="home-zones-section" data-layout-spec="Home-Zones">
+  <div class="home-zones-container">
+    <div class="home-zones-intro">
+      <h2>Built for real-world zones.</h2>
+      <p>Every environment demands specific safety solutions. Whether you're managing a busy parking lot, securing a construction site, protecting school crossings, or organizing warehouse traffic flow, we provide clear guidance on the right equipment for your zone. Our products are engineered to perform in the conditions you face daily.</p>
+    </div>
+
+    <div class="home-zones-grid">
+      <!-- Zone 1: Parking -->
+      <article class="home-zones-module">
+        <div class="home-zones-content">
+          <h3>Parking Facilities</h3>
+          <p>High-traffic parking areas require equipment that withstands constant vehicle movement and weather exposure. Our durable <strong>28 inch traffic cones for sale</strong> feature weighted bases and reflective collars for maximum visibility day and night. Pair with weather-resistant parking signs and reflective tape for clear directional guidance.</p>
+          <code class="home-zones-spec">Typical spec: retroreflective, weather-rated, quick deploy</code>
+        </div>
+        <div class="home-zones-image">
+          <img data-placeholder="home-zones-parking" data-context="Close-up macro shot of orange traffic cone with bright reflective silver collar in parking lot, showing prismatic reflective surface detail with sunlight creating rainbow effect on the reflective material, professional product photography for traffic safety equipment business" width="600" height="400" src="/assets/site-home-zones-parking.webp" alt="Reflective traffic cone in parking facility">
+        </div>
+      </article>
+
+      <!-- Zone 2: Construction -->
+      <article class="home-zones-module">
+        <div class="home-zones-content">
+          <h3>Construction Sites</h3>
+          <p>Active work zones demand high-visibility equipment that commands attention. Our construction-grade channelizers, barricades, and delineators use vibrant orange and reflective striping to create clear safety perimeters. Built to handle heavy equipment movement and harsh site conditions while maintaining visibility in dust and low light.</p>
+          <code class="home-zones-spec">Typical spec: retroreflective, weather-rated, quick deploy</code>
+        </div>
+        <div class="home-zones-image">
+          <img data-placeholder="home-zones-construction" data-context="Construction site safety barricade with orange and white reflective striping, showing weatherproof construction channelizer with detailed view of reflective tape and sturdy base, professional equipment photography for traffic safety business" width="600" height="400" src="/assets/site-home-zones-construction.webp" alt="High-visibility construction zone barricade">
+        </div>
+      </article>
+
+      <!-- Zone 3: School -->
+      <article class="home-zones-module">
+        <div class="home-zones-content">
+          <h3>School Zones</h3>
+          <p>Protecting students requires equipment that captures driver attention instantly. Our school crossing solutions include high-visibility stop/slow paddles, bright yellow crossing signs, and driveway markers designed for quick deployment. Clear, bold signage ensures drivers recognize school zones from a distance, giving them time to adjust speed.</p>
+          <code class="home-zones-spec">Typical spec: retroreflective, weather-rated, quick deploy</code>
+        </div>
+        <div class="home-zones-image">
+          <img data-placeholder="home-zones-school" data-context="Bright yellow school crossing sign with reflective borders in school zone, showing stop/slow paddle and safety equipment for student crossing areas, professional safety equipment photography with clear visibility focus" width="600" height="400" src="/assets/site-home-zones-school.webp" alt="School zone crossing safety equipment">
+        </div>
+      </article>
+
+      <!-- Zone 4: Warehouse -->
+      <article class="home-zones-module">
+        <div class="home-zones-content">
+          <h3>Warehouse Operations</h3>
+          <p>Indoor logistics facilities need clear visual guidance for forklift operators and pedestrian traffic. Our industrial floor marking tape creates defined pathways and hazard zones, while reflective hazard striping highlights dock edges and structural obstacles. Durable adhesives withstand heavy equipment traffic and maintain visibility under facility lighting.</p>
+          <code class="home-zones-spec">Typical spec: retroreflective, weather-rated, quick deploy</code>
+        </div>
+        <div class="home-zones-image">
+          <img data-placeholder="home-zones-warehouse" data-context="Warehouse floor with yellow and black hazard striping tape, showing reflective floor marking tape creating safety zones and pathways, close-up detail of industrial-grade adhesive tape with clear reflective properties for forklift safety" width="600" height="400" src="/assets/site-home-zones-warehouse.webp" alt="Warehouse floor safety marking and hazard striping">
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Bottom Divider: Road Marking Dashed Line -->
+  <div class="home-zones-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="dashFade" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#F2C200;stop-"></stop>
+          <stop offset="15%" style="stop-color:#F2C200;stop-opacity:0.3"></stop>
+          <stop offset="30%" style="stop-color:#F2C200;stop-opacity:0.6"></stop>
+          <stop offset="50%" style="stop-color:#F2C200;stop-opacity:0.8"></stop>
+          <stop offset="70%" style="stop-color:#F2C200;stop-opacity:0.6"></stop>
+          <stop offset="85%" style="stop-color:#F2C200;stop-opacity:0.3"></stop>
+          <stop offset="100%" style="stop-color:#F2C200;stop-"></stop>
+        </linearGradient>
+      </defs>
+      <!-- Base fill matching next section -->
+      <path d="M0,80 L0,40 L1200,40 L1200,80 Z" fill="var(--bg-dark)"></path>
+      <!-- Road marking dashes that break apart -->
+      <rect x="50" y="36" width="80" height="8" rx="1" fill="url(#dashFade)" opacity="0.4"></rect>
+      <rect x="160" y="36" width="80" height="8" rx="1" fill="url(#dashFade)" opacity="0.5"></rect>
+      <rect x="270" y="35" width="80" height="10" rx="1" fill="url(#dashFade)" opacity="0.65"></rect>
+      <rect x="380" y="34" width="85" height="12" rx="1" fill="url(#dashFade)" opacity="0.8"></rect>
+      <rect x="495" y="33" width="90" height="14" rx="2" fill="#F2C200" opacity="0.9"></rect>
+      <rect x="615" y="33" width="90" height="14" rx="2" fill="#F2C200" opacity="0.9"></rect>
+      <rect x="735" y="34" width="85" height="12" rx="1" fill="url(#dashFade)" opacity="0.8"></rect>
+      <rect x="850" y="35" width="80" height="10" rx="1" fill="url(#dashFade)" opacity="0.65"></rect>
+      <rect x="960" y="36" width="80" height="8" rx="1" fill="url(#dashFade)" opacity="0.5"></rect>
+      <rect x="1070" y="36" width="80" height="8" rx="1" fill="url(#dashFade)" opacity="0.4"></rect>
+    </svg>
+  </div>
+</section>
+
+<section class="home-showcase-section" data-layout-spec="Home-showcase">
+  <div class="showcase-container">
+    <div class="showcase-header">
+      <h2>High-visibility essentials, curated.</h2>
+      <p>Emphasize durability, compliance-minded design, and fast deployment. Our traffic safety equipment meets rigorous standards while ensuring quick setup for any environment—from construction zones to parking facilities.</p>
+    </div>
+    
+    <div class="showcase-grid">
+      <article class="showcase-card">
+        <div class="card-image-wrapper">
+          <img data-placeholder="home-showcase-image-1" data-context="Professional traffic safety equipment - bright orange 28 inch traffic cones and yellow delineators arranged on dark asphalt, high-visibility retroreflective bands, industrial safety setting, dramatic lighting showing reflective properties" width="600" height="450" src="/assets/site-home-showcase-image-1.webp" alt="Traffic cones and delineators with retroreflective bands">
+          <div class="reflective-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Cones &amp; Delineators</h3>
+          <p>Impact-resistant construction • High-visibility retroreflective bands • All-weather deployment</p>
+          <div class="spec-strip">Material: impact-resistant • Visibility: retroreflective • Use: indoor/outdoor</div>
+        </div>
+      </article>
+      
+      <article class="showcase-card">
+        <div class="card-image-wrapper">
+          <img data-placeholder="home-showcase-image-2" data-context="Professional traffic warning signs and portable stands - construction warning signs, no parking signs, road work ahead signs on sturdy metal stands, bright yellow and orange safety colors, industrial setting with dark background" width="600" height="450" src="/assets/site-home-showcase-image-2.webp" alt="Traffic warning signs on portable stands">
+          <div class="reflective-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Signs &amp; Stands</h3>
+          <p>Compliance-ready messaging • Portable mounting systems • Weather-resistant materials</p>
+          <div class="spec-strip">Material: aluminum/composite • Visibility: reflective sheeting • Use: temporary/permanent</div>
+        </div>
+      </article>
+      
+      <article class="showcase-card">
+        <div class="card-image-wrapper">
+          <img data-placeholder="home-showcase-image-3" data-context="Professional traffic barriers and reflective road marking tape - orange and white striped barriers, yellow reflective chevron tape on dark surface, industrial safety equipment, high-contrast safety markings" width="600" height="450" src="/assets/site-home-showcase-image-3.webp" alt="Traffic barriers and reflective marking tape">
+          <div class="reflective-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Barriers &amp; Reflective Marking</h3>
+          <p>Perimeter control solutions • High-visibility striping • Modular configuration options</p>
+          <div class="spec-strip">Material: polyethylene/vinyl • Visibility: prismatic reflective • Use: zoning/delineation</div>
+        </div>
+      </article>
+    </div>
+    
+    <div class="showcase-cta">
+      <a href="/products" class="cta-link">See all solutions <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="home-showcase-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="chevron-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#FFE600;stop-opacity:0.8"></stop>
+          <stop offset="100%" style="stop-color:#FFE600;stop-"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,60 L0,20 L580,20 L600,0 L620,20 L1200,20 L1200,60 Z" fill="var(--bg-light)"></path>
+      <path d="M0,20 L580,20 L600,0 L620,20 L1200,20 L1200,22 L620,22 L600,2 L580,22 L0,22 Z" fill="url(#chevron-highlight)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="home-testimonials-section" data-layout-spec="Home-testimonials">
+  <div class="testimonials-container">
+    <div class="testimonials-header">
+      <h2>Trusted when visibility matters.</h2>
+      <p>Real feedback from professionals who rely on our traffic safety equipment every day—from parking lots to construction sites.</p>
+    </div>
+    
+    <div class="testimonials-grid">
+      <article class="testimonial-card">
+        <h3>"Night visibility solved our parking issues."</h3>
+        <p>We installed 28 inch traffic cones for sale in our multi-level parking garage. The reflective strips are incredibly bright under our LED lights—drivers can spot hazards from 50 feet away now. Setup took minutes, and they've held up through two winters without fading.</p>
+        <p class="testimonial-attribution">— Marcus Chen, Property Manager at Riverside Commons</p>
+      </article>
+      
+      <article class="testimonial-card">
+        <h3>"Weather-resistant and job site tough."</h3>
+        <p>Our crew uses these traffic cone warning signs construction across five active sites. They've survived rainstorms, 90°F heat, and constant repositioning without cracking. The weighted bases stay put even in high wind. Best investment we've made for site safety compliance.</p>
+        <p class="testimonial-attribution">— Sarah Rodriguez, Site Supervisor at BuildRight Contractors</p>
+      </article>
+      
+      <article class="testimonial-card">
+        <h3>"Floor marking clarity improved workflow."</h3>
+        <p>We needed clear traffic lanes in our 80,000 sq ft warehouse. The reflective floor tape and cones created instant visual paths that reduced forklift incidents by 60%. Even in low-light corners, the markings stay visible. Our safety auditor was impressed.</p>
+        <p class="testimonial-attribution">— James Park, Warehouse Operations Lead at LogiFlow Distribution</p>
+      </article>
+    </div>
+  </div>
+  
+  <div class="testimonials-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="testimonials-divider-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#F7F8FB;stop-opacity:1"></stop>
+          <stop offset="65%" style="stop-color:#E3E8F0;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#12151C;stop-opacity:1"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,80 L0,0 L1200,0 L1200,80 Z" fill="url(#testimonials-divider-gradient)"></path>
+      <rect x="0" y="76" width="1200" height="4" fill="#FFE600" opacity="0.85"></rect>
+    </svg>
+  </div>
+</section>
+
+<section class="home-cta-section" data-layout-spec="Home-cta">
+  <div class="home-cta-container">
+    <div class="home-cta-content">
+      <h2>Make your space safer in one conversation.</h2>
+      <p class="home-cta-intro">Encourage visitors to describe their zone and constraints (night visibility, traffic speed, indoor/outdoor).</p>
+      
+      <div class="home-cta-buttons">
+        <a href="/contact" class="btn-primary">Contact Us</a>
+        <a href="/products" class="btn-secondary">Browse Solutions</a>
+      </div>
+      
+      <p class="home-cta-support">Share location type, approximate area, and visibility needs—we'll recommend a simple setup.</p>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer class="site-footer"><div class="footer-container"><div class="footer-grid"><div class="footer-column footer-about"><img src="/assets/silaryo-traffic-safety-equipment-logo.webp" alt="Silaryo" class="logo" /><p class="footer-description">Leading provider of traffic safety equipment and solutions. Keeping roads safe and traffic flowing smoothly.</p><div class="social-links"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-column"><h3 class="footer-heading">Quick Links</h3><ul class="footer-links"><li><a href="/products">Solutions</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Contact Us</h3><ul class="footer-contact"><li><i class="fas fa-envelope"></i><a href="mailto:[business_email]">[business_email]</a></li><li><i class="fas fa-phone"></i><a href="tel:[business_phone]">[business_phone]</a></li><li><a href="/"><i class="fas fa-map-marker-alt"></i><span>[business_address]</span></a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Legal</h3><ul class="footer-links"><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms &amp; Conditions</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div></div><div class="footer-bottom"><div class="footer-bottom-content"><p class="copyright">© 2026 Silaryo. All rights reserved.</p><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></footer>
+  
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <script src="/script.js"></script>
+
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+</body></html>
